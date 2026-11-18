@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ines Rook, graphic designer</title>
+<meta name="description" content="Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam: four disciplines on one machine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/drum/page.css">
+<link rel="stylesheet" href="styles/motion.css">
+<script>if (matchMedia("(prefers-reduced-motion: no-preference)").matches) { document.documentElement.classList.add("js-motion"); setTimeout(() => { if (!document.documentElement.classList.contains("motion-ready")) document.documentElement.classList.remove("js-motion"); }, 2500); }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="scripts/motion-core.js" defer></script>
+<script src="scripts/motion-drum.js" defer></script>
+<style>@font-face { font-family: "DSEG7 Classic"; src: url("https://cdn.jsdelivr.net/npm/dseg@0.46.0/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }</style>
+<style>
+  .f-d { font-family: var(--font-display); font-weight: 700; } .f-b { font-family: var(--font-body); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap top">
+  <a class="model" href="#main">IR-<span>16</span> Ines Rook</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#work">Patterns</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#services">Instruments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <div class="hero__text">
+      <h1 id="hero-title">Four disciplines. One machine.</h1>
+      <p class="lead">Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam. Every project is a pattern on the same row.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:hello@inesrook.studio">Email Ines</a>
+        <a class="btn btn--outline" href="#work">See the patterns</a>
+      </div>
+    </div>
+
+    <div class="machine" aria-label="The studio as a step sequencer">
+      <div class="machine__top">
+        <div class="readout"><span class="silk" id="year-label">Year</span><span class="seg" data-ghost="8888" data-year aria-labelledby="year-label">2025</span></div>
+        <div class="readout"><span class="silk" id="pat-label">Pattern</span><span class="seg" data-ghost="88" data-pat aria-labelledby="pat-label">01</span></div>
+        <div class="banks">
+          <span class="silk" id="bank-label">Pattern bank, one per project</span>
+          <div class="banks__keys" role="group" aria-labelledby="bank-label">
+            <button class="bank" type="button" data-bank="1" aria-pressed="true">1</button>
+            <button class="bank" type="button" data-bank="2" aria-pressed="false">2</button>
+            <button class="bank" type="button" data-bank="3" aria-pressed="false">3</button>
+            <button class="bank" type="button" data-bank="4" aria-pressed="false">4</button>
+            <button class="bank" type="button" data-bank="5" aria-pressed="false">5</button>
+          </div>
+        </div>
+        <p class="machine__name" data-name aria-live="polite">Tidewater Festival, poster series</p>
+      </div>
+            <div class="row">
+          <div class="qgroup q1"><span class="qlbl" aria-hidden="true">Identity</span><div class="quarter"><button class="key q1" type="button" aria-pressed="true" aria-label="Step 1, Brand identity"><span class="n">1</span><span class="led"></span><span class="cap"></span></button><button class="key q1" type="button" aria-pressed="false" aria-label="Step 2, Brand identity"><span class="n">2</span><span class="led"></span><span class="cap"></span></button><button class="key q1" type="button" aria-pressed="false" aria-label="Step 3, Brand identity"><span class="n">3</span><span class="led"></span><span class="cap"></span></button><button class="key q1" type="button" aria-pressed="false" aria-label="Step 4, Brand identity"><span class="n">4</span><span class="led"></span><span class="cap"></span></button></div></div>
+          <div class="qgroup q2"><span class="qlbl" aria-hidden="true">Digital</span><div class="quarter"><button class="key q2" type="button" aria-pressed="false" aria-label="Step 5, Digital and UI"><span class="n">5</span><span class="led"></span><span class="cap"></span></button><button class="key q2" type="button" aria-pressed="false" aria-label="Step 6, Digital and UI"><span class="n">6</span><span class="led"></span><span class="cap"></span></button><button class="key q2" type="button" aria-pressed="false" aria-label="Step 7, Digital and UI"><span class="n">7</span><span class="led"></span><span class="cap"></span></button><button class="key q2" type="button" aria-pressed="false" aria-label="Step 8, Digital and UI"><span class="n">8</span><span class="led"></span><span class="cap"></span></button></div></div>
+          <div class="qgroup q3"><span class="qlbl" aria-hidden="true">Illustration</span><div class="quarter"><button class="key q3" type="button" aria-pressed="true" aria-label="Step 9, Illustration"><span class="n">9</span><span class="led"></span><span class="cap"></span></button><button class="key q3" type="button" aria-pressed="true" aria-label="Step 10, Illustration"><span class="n">10</span><span class="led"></span><span class="cap"></span></button><button class="key q3" type="button" aria-pressed="true" aria-label="Step 11, Illustration"><span class="n">11</span><span class="led"></span><span class="cap"></span></button><button class="key q3" type="button" aria-pressed="false" aria-label="Step 12, Illustration"><span class="n">12</span><span class="led"></span><span class="cap"></span></button></div></div>
+          <div class="qgroup q4"><span class="qlbl" aria-hidden="true">Print</span><div class="quarter"><button class="key q4" type="button" aria-pressed="true" aria-label="Step 13, Posters and print"><span class="n">13</span><span class="led"></span><span class="cap"></span></button><button class="key q4" type="button" aria-pressed="true" aria-label="Step 14, Posters and print"><span class="n">14</span><span class="led"></span><span class="cap"></span></button><button class="key q4" type="button" aria-pressed="true" aria-label="Step 15, Posters and print"><span class="n">15</span><span class="led"></span><span class="cap"></span></button><button class="key q4" type="button" aria-pressed="true" aria-label="Step 16, Posters and print"><span class="n">16</span><span class="led"></span><span class="cap"></span></button></div></div>
+      </div>
+      <div class="machine__foot"><span class="silk">Step row, sixteen steps</span><span class="silk">Tap a step to arm it, tap again to accent</span></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="work" aria-labelledby="work-title">
+    <div class="head"><h2 id="work-title">Five patterns</h2><p>Projects from 2023 to 2025. The strip shows which disciplines each one used.</p></div>
+    <ol class="patterns">
+      <li class="pattern">
+        <span class="seg" data-ghost="88" aria-hidden="true">01</span>
+        <div class="art" role="img" aria-label="Tidewater Festival poster: Tidewater in white over orange and yellow stripes">
+          <svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" style="fill:var(--panel)"/><rect y="110" width="320" height="30" style="fill:var(--red)"/><rect y="140" width="320" height="30" style="fill:var(--orange)"/><rect y="170" width="320" height="30" style="fill:var(--yellow)"/><text x="20" y="80" class="f-d" font-size="48" style="fill:var(--white)">TIDEWATER</text><text x="20" y="100" class="f-b" font-size="12" style="fill:var(--silk-2)">Rotterdam, 14 to 17 August</text></svg>
+        </div>
+        <div class="pattern__text"><h3>Tidewater Festival</h3><p class="silk">Poster series, 2025</p><p>Twelve posters, one per night, printed in two colours.</p><div class="mini" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+      </li>
+      <li class="pattern">
+        <span class="seg" data-ghost="88" aria-hidden="true">02</span>
+        <div class="art" role="img" aria-label="Hallo Bakery wordmark in charcoal on yellow">
+          <svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" style="fill:var(--yellow)"/><text x="160" y="118" text-anchor="middle" class="f-d" font-size="72" style="fill:var(--panel-3)">hallo</text><text x="160" y="150" text-anchor="middle" class="f-b" font-size="13" style="fill:var(--panel-3)">bread and coffee</text></svg>
+        </div>
+        <div class="pattern__text"><h3>Hallo Bakery</h3><p class="silk">Identity and packaging, 2025</p><p>A wordmark that fits a paper bag and a shopfront.</p><div class="mini" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i></div></div>
+      </li>
+      <li class="pattern">
+        <span class="seg" data-ghost="88" aria-hidden="true">03</span>
+        <div class="art" role="img" aria-label="Ferro banking app: a balance of 2,340 euros and three transactions">
+          <svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" style="fill:var(--panel-2)"/><rect x="100" y="14" width="120" height="200" rx="12" style="fill:var(--white)"/><text x="114" y="42" class="f-b" font-size="9" style="fill:#555">Main account</text><text x="114" y="72" class="f-d" font-size="18" style="fill:var(--panel-3)">€2,340.00</text><g class="f-b" font-size="9" style="fill:var(--panel-3)"><text x="114" y="104">Groceries</text><text x="206" y="104" text-anchor="end">−42.10</text><text x="114" y="126">Salary</text><text x="206" y="126" text-anchor="end">+2,900.00</text><text x="114" y="148">Rent</text><text x="206" y="148" text-anchor="end">−1,150.00</text></g><rect x="114" y="164" width="92" height="22" rx="3" style="fill:var(--red)"/></svg>
+        </div>
+        <div class="pattern__text"><h3>Ferro</h3><p class="silk">Banking app interface, 2024</p><p>Calm screens for money: big numbers, few words.</p><div class="mini" aria-hidden="true"><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      </li>
+      <li class="pattern">
+        <span class="seg" data-ghost="88" aria-hidden="true">04</span>
+        <div class="art" role="img" aria-label="Small Hours record sleeve: a black disc with an orange label on charcoal">
+          <svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" style="fill:var(--panel)"/><circle cx="210" cy="100" r="82" style="fill:#0c0c0d"/><circle cx="210" cy="100" r="24" style="fill:var(--orange)"/><text x="20" y="60" class="f-d" font-size="28" style="fill:var(--white)">SMALL</text><text x="20" y="92" class="f-d" font-size="28" style="fill:var(--white)">HOURS</text></svg>
+        </div>
+        <div class="pattern__text"><h3>Small Hours Records</h3><p class="silk">Sleeves and illustration, 2024</p><p>A sleeve system for a late-night jazz label.</p><div class="mini" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i></div></div>
+      </li>
+      <li class="pattern">
+        <span class="seg" data-ghost="88" aria-hidden="true">05</span>
+        <div class="art" role="img" aria-label="Museum of Maps wayfinding sign: a large 4 and Cartography">
+          <svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" style="fill:var(--white)"/><text x="16" y="182" class="f-d" font-size="200" style="fill:var(--panel-3)">4</text><rect x="150" y="96" width="14" height="14" style="fill:var(--red)"/><text x="150" y="140" class="f-d" font-size="20" style="fill:var(--panel-3)">CARTOGRAPHY</text><text x="150" y="160" class="f-b" font-size="11" style="fill:#555">Room 4, first floor</text></svg>
+        </div>
+        <div class="pattern__text"><h3>Museum of Maps</h3><p class="silk">Wayfinding and identity, 2023</p><p>Signs that read from twenty metres in low light.</p><div class="mini" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wrap section" id="process" aria-labelledby="process-title">
+    <div class="head"><h2 id="process-title">Four bars, every project</h2><p>The same sequence runs every time.</p></div>
+    <ol class="bars">
+      <li><span class="barstrip" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><h3>Listen</h3><p>A call, a brief, a fixed quote.</p></li>
+      <li><span class="barstrip" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><h3>Sketch</h3><p>Three directions on paper, one chosen.</p></li>
+      <li><span class="barstrip" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><h3>Build</h3><p>The system, tested on real things.</p></li>
+      <li><span class="barstrip" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><h3>Hand over</h3><p>Files, guidelines and a walkthrough.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap section" id="services" aria-labelledby="services-title">
+    <div class="head"><h2 id="services-title">Four instruments</h2><p>One person plays every part, so they all keep the same time.</p></div>
+    <div class="instruments">
+      <div class="instrument"><h3>Brand identity</h3><p>Logos, type systems, colour, guidelines and packaging.</p></div>
+      <div class="instrument"><h3>Digital and UI</h3><p>Websites, apps and design systems, handed over in Figma.</p></div>
+      <div class="instrument"><h3>Illustration</h3><p>Editorial pieces, covers, record sleeves and murals.</p></div>
+      <div class="instrument"><h3>Posters and print</h3><p>Campaigns, editions and anything that goes on a wall.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap section studio" aria-labelledby="studio-title">
+    <h2 id="studio-title">One person, on purpose</h2>
+    <div class="studio__panel">
+      <div class="readouts">
+        <div class="readout"><span class="silk">Projects at a time</span><span class="seg" data-ghost="8">4</span></div>
+        <div class="readout"><span class="silk">Booking from</span><span class="seg" data-ghost="88.8888">02.2027</span></div>
+      </div>
+      <p>You work with me from the first call to the final file. No account managers, no hand-offs. I take four projects at a time, so each one gets proper attention.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Have a project in mind?</h2>
+      <a class="mail" href="mailto:hello@inesrook.studio">hello@inesrook.studio</a>
+      <p>Tell me what you are making and when it needs to exist.</p>
+      <a class="btn" href="mailto:hello@inesrook.studio">Write an email</a>
+      <footer class="footer">
+        <span>Ines Rook, graphic design studio, Rotterdam</span>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">Are.na</a></li><li><a href="#">LinkedIn</a></li></ul>
+        <span>The machine and all projects shown are fictional demonstration work.</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Pattern banks light each project's disciplines on the row; step keys arm, then accent, then clear. State only, no playback.
+  const patterns = {
+    1: { year: '2025', name: 'Tidewater Festival, poster series', steps: [1, 9, 10, 11, 13, 14, 15, 16] },
+    2: { year: '2025', name: 'Hallo Bakery, identity and packaging', steps: [1, 2, 3, 4, 13, 15] },
+    3: { year: '2024', name: 'Ferro, banking app interface', steps: [1, 3, 5, 6, 7, 8] },
+    4: { year: '2024', name: 'Small Hours Records, sleeves and illustration', steps: [2, 9, 10, 11, 12, 14] },
+    5: { year: '2023', name: 'Museum of Maps, wayfinding and identity', steps: [1, 2, 3, 4, 5, 13, 14] },
+  };
+  const keys = [...document.querySelectorAll('.key')];
+  const banks = [...document.querySelectorAll('.bank')];
+  const load = (n) => {
+    const p = patterns[n];
+    banks.forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.bank === n)));
+    keys.forEach((k, i) => { k.setAttribute('aria-pressed', String(p.steps.includes(i + 1))); k.removeAttribute('data-accent'); });
+    document.querySelector('[data-year]').textContent = p.year;
+    document.querySelector('[data-pat]').textContent = String(n).padStart(2, '0');
+    document.querySelector('[data-name]').textContent = p.name;
+  };
+  banks.forEach((b) => b.addEventListener('click', () => load(+b.dataset.bank)));
+  keys.forEach((k) => k.addEventListener('click', () => {
+    if (k.getAttribute('aria-pressed') === 'false') k.setAttribute('aria-pressed', 'true');
+    else if (!k.hasAttribute('data-accent')) k.setAttribute('data-accent', '');
+    else { k.removeAttribute('data-accent'); k.setAttribute('aria-pressed', 'false'); }
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ines Rook, graphic designer</title>
+<meta name="description" content="Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam: every colour registered to one keyline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/block/page.css">
+<style>
+  .k { fill: none; stroke: var(--key); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+  .k-f { fill: var(--key); }
+  .b-ind { fill: var(--indigo); } .b-red { fill: var(--safflower); } .b-brn { fill: var(--clove); } .b-paper { fill: var(--kozo); } .b-paper2 { fill: var(--kozo-2); }
+  .t-d { font-family: var(--font-display); } .t-b { font-family: var(--font-body); }
+  .l-ind { opacity: var(--ind, 1); } .l-red { opacity: var(--red, 1); } .l-brn { opacity: var(--brn, 1); } .l-key { opacity: var(--key-on, 1); }
+</style>
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="bokashi-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--indigo)" style="stop-color:var(--indigo)"/><stop offset="1" stop-color="var(--indigo)" style="stop-color:var(--indigo)" stop-opacity="0"/></linearGradient>
+    <linearGradient id="bokashi-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--indigo-2)"/><stop offset="0.6" style="stop-color:var(--indigo)"/></linearGradient>
+    <symbol id="print" viewBox="0 0 400 500">
+      <rect width="400" height="500" class="b-paper"/>
+      <g class="l-ind">
+        <rect width="400" height="90" fill="url(#bokashi-sky)"/>
+        <path d="M0 340 Q50 322 100 340 T200 340 T300 340 T400 340 V500 H0Z" fill="url(#bokashi-river)"/>
+        <rect x="300" y="240" width="22" height="60" class="b-ind"/><rect x="326" y="210" width="18" height="90" class="b-ind"/><rect x="350" y="252" width="30" height="48" class="b-ind"/>
+      </g>
+      <g class="l-red"><circle cx="292" cy="148" r="64" class="b-red"/></g>
+      <g class="l-brn">
+        <polygon points="150,300 186,86 202,86 176,300" class="b-brn"/>
+        <rect x="0" y="300" width="400" height="14" class="b-brn"/>
+      </g>
+      <g class="l-key k">
+        <rect x="6" y="6" width="388" height="488"/>
+        <circle cx="292" cy="148" r="64"/>
+        <polygon points="150,300 186,86 202,86 176,300"/>
+        <rect x="0" y="300" width="400" height="14"/>
+        <path d="M194 92L40 300M194 92L82 300M194 92L120 300M194 92L250 300M194 92L300 300M194 92L360 300"/>
+        <rect x="300" y="240" width="22" height="60"/><rect x="326" y="210" width="18" height="90"/><rect x="350" y="252" width="30" height="48"/>
+        <path d="M0 340 Q50 322 100 340 T200 340 T300 340 T400 340M0 380 Q50 362 100 380 T200 380 T300 380 T400 380M0 420 Q50 402 100 420 T200 420 T300 420 T400 420M0 460 Q50 442 100 460 T200 460 T300 460 T400 460"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+  <header class="rail">
+    <a class="rail__name" href="#main">
+      <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="30" cy="30" r="15" style="fill:var(--indigo)"/><path d="M3 30H57M30 3V57" stroke="currentColor" stroke-width="1.5"/></svg>
+      <b>Ines Rook</b>
+      <span>Graphic design, Rotterdam</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Editions</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#services">Pigments</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="rail__seals" aria-hidden="true"><span class="seal seal--square">IR</span><span class="seal seal--round">R'dam</span></div>
+  </header>
+
+  <main id="main" class="main">
+    <section class="band hero" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <h1 id="hero-title">Every colour on one keyline.</h1>
+        <p class="lead">Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam, each one registered to the same line.</p>
+        <div class="actions">
+          <a class="btn btn--indigo" href="mailto:hello@inesrook.studio">Email Ines about a project</a>
+          <a class="btn btn--line" href="#work">See the editions</a>
+        </div>
+      </div>
+      <figure class="hero__print">
+        <svg class="print" viewBox="0 0 400 500" role="img" aria-label="A print of Rotterdam: the Erasmus bridge in brown under a safflower sun, the river in indigo, every colour inside one black keyline"><use href="#print"/></svg>
+        <span class="cartouche" aria-hidden="true">Ines Rook</span>
+        <figcaption>The Erasmus bridge, four blocks on one keyline. Demonstration print.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="work" aria-labelledby="work-title">
+      <div class="head"><h2 id="work-title">Five editions</h2><p>Projects from 2023 to 2025, each printed in its own pigments.</p></div>
+      <div class="editions">
+        <article class="ed lead-edition" aria-labelledby="e1">
+          <div class="art" role="img" aria-label="Tidewater Festival poster: indigo waves under a safflower sun and the word Tidewater">
+            <svg viewBox="0 0 400 500" aria-hidden="true">
+              <rect width="400" height="500" class="b-paper"/>
+              <circle cx="270" cy="170" r="90" class="b-red"/>
+              <path d="M0 300 Q60 250 120 300 T240 300 T360 300 T480 300 V500 H0Z" class="b-ind"/>
+              <path class="k" d="M0 300 Q60 250 120 300 T240 300 T360 300 T480 300M0 350 Q60 300 120 350 T240 350 T360 350 T480 350M0 400 Q60 350 120 400 T240 400 T360 400 T480 400"/>
+              <circle cx="270" cy="170" r="90" class="k"/>
+              <text x="28" y="90" class="t-d" font-size="54" style="fill:var(--key)">Tidewater</text>
+              <text x="28" y="470" class="t-b" font-size="16" style="fill:var(--kozo)">Rotterdam, 14 to 17 August</text>
+            </svg>
+          </div>
+          <h3 id="e1">Tidewater Festival</h3>
+          <p class="meta">Poster series, 2025</p>
+          <p>Twelve posters, one per night, printed in two colours.</p>
+        </article>
+        <ol class="ed-list">
+          <li class="ed">
+            <div class="art" role="img" aria-label="Hallo Bakery wordmark in black on a safflower block">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" class="b-paper"/><rect x="20" y="40" width="160" height="120" class="b-red"/><rect x="20" y="40" width="160" height="120" class="k"/><text x="100" y="114" text-anchor="middle" class="t-d" font-size="44" style="fill:var(--kozo)">hallo</text></svg>
+            </div>
+            <div><h3>Hallo Bakery</h3><p class="meta">Identity and packaging, 2025</p><p>A wordmark that fits a paper bag and a shopfront.</p></div>
+          </li>
+          <li class="ed">
+            <div class="art" role="img" aria-label="Ferro banking app: a phone outline with an indigo header, a balance and a safflower button">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" class="b-paper2"/><rect x="60" y="14" width="80" height="172" rx="10" class="b-paper"/><rect x="60" y="14" width="80" height="54" rx="10" class="b-ind"/><text x="100" y="52" text-anchor="middle" class="t-d" font-size="16" style="fill:var(--kozo)">€2,340</text><rect x="72" y="150" width="56" height="20" class="b-red"/><path class="k" d="M72 86H128M72 104H128M72 122H128"/><rect x="60" y="14" width="80" height="172" rx="10" class="k"/></svg>
+            </div>
+            <div><h3>Ferro</h3><p class="meta">Banking app interface, 2024</p><p>Calm screens for money: big numbers, few words.</p></div>
+          </li>
+          <li class="ed">
+            <div class="art" role="img" aria-label="Small Hours record sleeve: a black disc under an indigo crescent moon">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" class="b-ind"/><circle cx="120" cy="120" r="62" class="k-f"/><circle cx="120" cy="120" r="14" class="b-red"/><circle cx="56" cy="54" r="26" class="b-paper"/><circle cx="66" cy="48" r="24" class="b-ind"/><text x="16" y="186" class="t-d" font-size="16" style="fill:var(--kozo)">Small Hours</text></svg>
+            </div>
+            <div><h3>Small Hours Records</h3><p class="meta">Sleeves and illustration, 2024</p><p>A sleeve system for a late-night jazz label.</p></div>
+          </li>
+          <li class="ed">
+            <div class="art" role="img" aria-label="Museum of Maps wayfinding sign: a large black 4 over a clove-brown block, Cartography">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" class="b-paper"/><rect x="0" y="130" width="200" height="70" class="b-brn"/><text x="10" y="160" class="t-d" font-size="140" style="fill:var(--key)">4</text><text x="104" y="188" class="t-d" font-size="15" style="fill:var(--kozo)">Cartography</text></svg>
+            </div>
+            <div><h3>Museum of Maps</h3><p class="meta">Wayfinding and identity, 2023</p><p>Signs that read from twenty metres in low light.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band" id="process" aria-labelledby="process-title">
+      <div class="head"><h2 id="process-title">A project, pulled block by block</h2><p>Four steps, one keyline. Choose a step to pull it.</p></div>
+      <div class="reg">
+        <figure class="reg__print" aria-live="polite">
+          <svg class="print" id="reg-print" viewBox="0 0 400 500" role="img" aria-label="The bridge print with every block pulled"><use href="#print"/></svg>
+        </figure>
+        <div class="reg__steps">
+          <ol class="pulls">
+            <li><button type="button" data-pull="1" aria-pressed="true"><span class="chip" style="background:var(--kozo)"></span><h3>Listen: the keyline</h3><p>A call, a brief, a fixed quote.</p></button></li>
+            <li><button type="button" data-pull="2" aria-pressed="true"><span class="chip" style="background:var(--indigo)"></span><h3>Sketch: indigo</h3><p>Three directions on paper, one chosen.</p></button></li>
+            <li><button type="button" data-pull="3" aria-pressed="true"><span class="chip" style="background:var(--safflower)"></span><h3>Build: safflower</h3><p>The system, tested on real things.</p></button></li>
+            <li><button type="button" data-pull="4" aria-pressed="true"><span class="chip" style="background:var(--clove)"></span><h3>Hand over: clove</h3><p>Files, guidelines and a walkthrough.</p></button></li>
+          </ol>
+          <div class="reg__controls">
+            <button class="btn btn--line" type="button" data-move="-1">Lift a block</button>
+            <button class="btn btn--indigo" type="button" data-move="1">Pull the next block</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="services" aria-labelledby="services-title">
+      <div class="head"><h2 id="services-title">Four pigments, one press</h2><p>One person covers every discipline, so they all speak the same language.</p></div>
+      <div class="pigments">
+        <div class="pigment"><div class="pigment__block" style="background:var(--indigo)"></div><div class="pigment__text"><h3>Brand identity</h3><p>Logos, type systems, colour, guidelines and packaging.</p></div></div>
+        <div class="pigment"><div class="pigment__block" style="background:var(--safflower)"></div><div class="pigment__text"><h3>Digital and UI</h3><p>Websites, apps and design systems, handed over in Figma.</p></div></div>
+        <div class="pigment"><div class="pigment__block" style="background:var(--clove)"></div><div class="pigment__text"><h3>Illustration</h3><p>Editorial pieces, covers, record sleeves and murals.</p></div></div>
+        <div class="pigment"><div class="pigment__block" style="background:var(--key)"></div><div class="pigment__text"><h3>Posters and print</h3><p>Campaigns, editions and anything that goes on a wall.</p></div></div>
+      </div>
+    </section>
+
+    <section class="band studio" id="studio" aria-labelledby="studio-title">
+      <h2 id="studio-title">One person, on purpose</h2>
+      <div class="studio__text">
+        <p>You work with me from the first call to the final file. No account managers, no hand-offs. I take four projects at a time, so each one gets proper attention.</p>
+        <p class="studio__sign"><span class="seal seal--square" aria-hidden="true">IR</span>Booking projects from February 2027</p>
+      </div>
+    </section>
+
+    <section class="band contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Have a project in mind?</h2>
+      <a class="mail" href="mailto:hello@inesrook.studio">hello@inesrook.studio</a>
+      <p>Tell me what you are making and when it needs to exist.</p>
+      <a class="btn" href="mailto:hello@inesrook.studio">Write an email</a>
+      <footer class="colophon">
+        <span>Ines Rook, graphic design studio, Rotterdam</span>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">Are.na</a></li><li><a href="#">LinkedIn</a></li></ul>
+        <span>All prints and projects shown are fictional demonstration work.</span>
+      </footer>
+    </section>
+  </main>
+</div>
+
+<script>
+  // Registration stepper: each step pulls one more block onto the keyline. Without JS the finished print stays.
+  const print = document.getElementById('reg-print');
+  const pulls = [...document.querySelectorAll('.pulls button')];
+  const layers = ['--key-on', '--ind', '--red', '--brn'];
+  const names = ['the keyline only', 'keyline and indigo', 'keyline, indigo and safflower', 'every block pulled'];
+  let n = 4;
+  const set = (v) => {
+    n = Math.min(4, Math.max(1, v));
+    layers.forEach((l, i) => print.style.setProperty(l, i < n ? 1 : 0));
+    pulls.forEach((b, i) => b.setAttribute('aria-pressed', String(i < n)));
+    print.setAttribute('aria-label', 'The bridge print with ' + names[n - 1]);
+    document.querySelector('[data-move="-1"]').disabled = n === 1;
+    document.querySelector('[data-move="1"]').disabled = n === 4;
+  };
+  pulls.forEach((b) => b.addEventListener('click', () => set(+b.dataset.pull)));
+  document.querySelectorAll('[data-move]').forEach((b) => b.addEventListener('click', () => set(n + +b.dataset.move)));
+  set(4);
+</script>
+</body>
+</html>

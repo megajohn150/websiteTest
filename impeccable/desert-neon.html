@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ines Rook, graphic designer</title>
+<meta name="description" content="Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam: one hand draws the whole sign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Yellowtail&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/neon/page.css">
+<style>
+  .s-panel { fill: var(--pf); stroke: var(--ln); stroke-width: 1.5; }
+  .s-teal { fill: var(--tf); stroke: var(--ln); stroke-width: 1.5; }
+  .s-neon { fill: var(--nf); stroke: var(--ln); stroke-width: 1; filter: var(--glow); }
+  .s-neon2 { fill: var(--nf2); stroke: var(--ln); stroke-width: 1; filter: var(--glow); }
+  .s-lamp { fill: var(--lf); stroke: var(--ln); stroke-width: 1; filter: var(--glow); }
+  .s-tx { fill: var(--tx); } .s-tx2 { fill: var(--tx2); }
+  .f-d { font-family: var(--font-display); font-weight: 800; letter-spacing: 0.08em; } .f-s { font-family: var(--font-script); }
+  .d-line { stroke: var(--draft-line); stroke-width: 1; fill: none; } .d-tx { fill: var(--draft-line); font-family: var(--font-body); font-size: 11px; }
+</style>
+</head>
+<body class="is-night">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <symbol id="sign" viewBox="0 0 360 540">
+      <rect x="150" y="300" width="16" height="240" class="s-teal"/>
+      <rect x="196" y="300" width="16" height="240" class="s-teal"/>
+      <text x="22" y="112" transform="rotate(-7 180 100)" class="f-s s-neon" font-size="76">Ines Rook</text>
+      <polygon points="30,140 270,140 270,118 342,190 270,262 270,240 30,240" class="s-teal"/>
+      <text x="150" y="208" text-anchor="middle" class="f-d s-tx2" font-size="50">STUDIO</text>
+      <g class="s-lamp">
+        <circle cx="44" cy="151" r="5"/><circle cx="68" cy="151" r="5"/><circle cx="92" cy="151" r="5"/><circle cx="116" cy="151" r="5"/><circle cx="140" cy="151" r="5"/><circle cx="164" cy="151" r="5"/><circle cx="188" cy="151" r="5"/><circle cx="212" cy="151" r="5"/><circle cx="236" cy="151" r="5"/><circle cx="260" cy="151" r="5"/>
+        <circle cx="44" cy="229" r="5"/><circle cx="68" cy="229" r="5"/><circle cx="92" cy="229" r="5"/><circle cx="116" cy="229" r="5"/><circle cx="140" cy="229" r="5"/><circle cx="164" cy="229" r="5"/><circle cx="188" cy="229" r="5"/><circle cx="212" cy="229" r="5"/><circle cx="236" cy="229" r="5"/><circle cx="260" cy="229" r="5"/>
+        <circle cx="290" cy="150" r="5"/><circle cx="314" cy="172" r="5"/><circle cx="314" cy="208" r="5"/><circle cx="290" cy="230" r="5"/>
+      </g>
+      <rect x="58" y="268" width="244" height="70" class="s-panel"/>
+      <text x="180" y="298" text-anchor="middle" class="f-d s-tx" font-size="22">IDENTITY  SCREENS</text>
+      <text x="180" y="326" text-anchor="middle" class="f-d s-tx" font-size="22">ILLUSTRATION  PRINT</text>
+      <rect x="88" y="346" width="184" height="42" class="s-teal"/>
+      <text x="180" y="376" text-anchor="middle" class="f-d s-neon2" font-size="26">NOW BOOKING</text>
+      <rect x="108" y="396" width="144" height="36" class="s-panel"/>
+      <text x="180" y="422" text-anchor="middle" class="f-d s-tx" font-size="22">FEB 2027</text>
+    </symbol>
+  </defs>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap top">
+    <a class="logo" href="#main"><b>Ines Rook</b><span>sign &amp; studio</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Tenants</a></li>
+        <li><a href="#sequence">Process</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="strip"><span>Graphic design, Rotterdam</span><span>Identity, screens, illustration, print</span></div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__text">
+      <h1 id="hero-title">One hand <span>draws the whole sign.</span></h1>
+      <p class="lead">Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam: the script, the panels and the arrow.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:hello@inesrook.studio">Email Ines</a>
+        <a class="btn btn--plain" href="#work">See the tenants</a>
+      </div>
+    </div>
+    <div class="face" role="img" aria-label="The studio's pylon sign: Ines Rook in neon script over an arrow reading Studio, panels for identity, screens, illustration and print, and Now booking February 2027">
+      <svg class="sign" viewBox="0 0 360 540" aria-hidden="true"><use href="#sign"/></svg>
+    </div>
+    <div class="draft">
+      <svg class="sign sign--draft" viewBox="-30 -30 400 590" role="img" aria-label="The same sign as a working drawing: dimensioned 28 feet tall and 15 feet 6 inches wide, lamps numbered in chase order">
+        <use href="#sign"/>
+        <path class="d-line" d="M-14 40V540M-20 40H-8M-20 540H-8M30 -16H342M30 -22V-10M342 -22V-10"/>
+        <text class="d-tx" x="-22" y="300" transform="rotate(-90 -22 300)" text-anchor="middle">28 ft</text>
+        <text class="d-tx" x="186" y="-20" text-anchor="middle">15 ft 6 in</text>
+        <g class="d-tx" font-size="9">
+          <circle cx="44" cy="134" r="7" class="d-line"/><text x="44" y="137" text-anchor="middle">1</text>
+          <circle cx="140" cy="134" r="7" class="d-line"/><text x="140" y="137" text-anchor="middle">5</text>
+          <circle cx="260" cy="134" r="7" class="d-line"/><text x="260" y="137" text-anchor="middle">10</text>
+          <circle cx="326" cy="190" r="7" class="d-line"/><text x="326" y="193" text-anchor="middle">12</text>
+          <circle cx="44" cy="248" r="7" class="d-line"/><text x="44" y="251" text-anchor="middle">24</text>
+        </g>
+      </svg>
+      <div class="switch">
+        <p id="switch-label">Working drawing, lamps numbered in chase order</p>
+        <button class="btn" type="button" aria-pressed="true" aria-describedby="switch-label" data-switch>Turn the neon off</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="work" aria-labelledby="work-title">
+    <div class="head"><h2 id="work-title">Five tenants on the sign</h2><p>Projects from 2023 to 2025, billed in the order they were lit.</p></div>
+    <ol class="tenants">
+      <li class="tenant">
+        <span class="lamp-n">1</span>
+        <div><h3>Tidewater Festival</h3><p class="meta">Poster series, 2025</p></div>
+        <p>Twelve posters, one per night, printed in two colours.</p>
+        <div class="art" role="img" aria-label="Tidewater Festival poster: Tidewater in coral over a teal tide">
+          <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" style="fill:var(--night)"/><path d="M0 120 Q40 100 80 120 T160 120 T240 120 T320 120 V180 H0Z" style="fill:var(--teal)"/><text x="18" y="74" class="f-s" font-size="46" style="fill:var(--coral)">Tidewater</text><text x="18" y="164" class="f-d" font-size="13" style="fill:var(--cream)">ROTTERDAM 14 TO 17 AUG</text></svg>
+        </div>
+      </li>
+      <li class="tenant">
+        <span class="lamp-n">2</span>
+        <div><h3>Hallo Bakery</h3><p class="meta">Identity and packaging, 2025</p></div>
+        <p>A wordmark that fits a paper bag and a shopfront.</p>
+        <div class="art" role="img" aria-label="Hallo Bakery shopfront: hallo in cream on a coral awning">
+          <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" style="fill:var(--cream)"/><rect x="0" y="0" width="320" height="64" style="fill:var(--coral)"/><path d="M0 64 Q20 84 40 64 T80 64 T120 64 T160 64 T200 64 T240 64 T280 64 T320 64" style="fill:var(--coral)"/><text x="160" y="46" text-anchor="middle" class="f-d" font-size="40" style="fill:var(--cream)">HALLO</text><text x="160" y="140" text-anchor="middle" class="f-d" font-size="18" style="fill:var(--ink)">BREAD AND COFFEE</text></svg>
+        </div>
+      </li>
+      <li class="tenant">
+        <span class="lamp-n">3</span>
+        <div><h3>Ferro</h3><p class="meta">Banking app interface, 2024</p></div>
+        <p>Calm screens for money: big numbers, few words.</p>
+        <div class="art" role="img" aria-label="Ferro banking app: a balance of 2,340 euros and a send button">
+          <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" style="fill:var(--teal-dark)"/><rect x="100" y="14" width="120" height="190" rx="12" style="fill:var(--cream)"/><text x="114" y="44" font-size="9" style="fill:var(--ink-2);font-family:var(--font-body)">Main account</text><text x="114" y="74" class="f-d" font-size="21" style="fill:var(--ink)">€2,340.00</text><path d="M114 92H206M114 112H206M114 132H206" stroke="var(--cream-2)" style="stroke:var(--cream-2)"/><rect x="114" y="146" width="92" height="20" style="fill:var(--coral)"/></svg>
+        </div>
+      </li>
+      <li class="tenant">
+        <span class="lamp-n">4</span>
+        <div><h3>Small Hours Records</h3><p class="meta">Sleeves and illustration, 2024</p></div>
+        <p>A sleeve system for a late-night jazz label.</p>
+        <div class="art" role="img" aria-label="Small Hours record sleeve: a black disc with an amber label and Small Hours in neon script">
+          <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" style="fill:var(--night)"/><circle cx="220" cy="90" r="72" style="fill:#05080d"/><circle cx="220" cy="90" r="20" style="fill:var(--amber)"/><text x="20" y="110" class="f-s" font-size="38" style="fill:var(--teal-neon)">Small Hours</text></svg>
+        </div>
+      </li>
+      <li class="tenant">
+        <span class="lamp-n">5</span>
+        <div><h3>Museum of Maps</h3><p class="meta">Wayfinding and identity, 2023</p></div>
+        <p>Signs that read from twenty metres in low light.</p>
+        <div class="art" role="img" aria-label="Museum of Maps wayfinding sign: a large 4 and Cartography">
+          <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" style="fill:var(--ink)"/><text x="20" y="160" class="f-d" font-size="170" style="fill:var(--cream)">4</text><text x="130" y="110" class="f-d" font-size="30" style="fill:var(--amber)">CARTOGRAPHY</text><text x="130" y="136" font-size="12" style="fill:var(--cream-2);font-family:var(--font-body)">Room 4, first floor</text></svg>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wrap section" id="sequence" aria-labelledby="sequence-title">
+    <div class="head"><h2 id="sequence-title">Build sequence</h2><p>Every project is wired in the same order.</p></div>
+    <ol class="sequence">
+      <li><span class="lamp-n">1</span><h3>Listen</h3><p>A call, a brief, a fixed quote.</p></li>
+      <li><span class="lamp-n">2</span><h3>Sketch</h3><p>Three directions on paper, one chosen.</p></li>
+      <li><span class="lamp-n">3</span><h3>Build</h3><p>The system, tested on real things.</p></li>
+      <li><span class="lamp-n">4</span><h3>Hand over</h3><p>Files, guidelines and a walkthrough.</p></li>
+    </ol>
+  </section>
+
+  <section class="night section" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="head"><h2 id="services-title">Four lamp banks</h2><p>One person wires every discipline, so they all speak the same language.</p></div>
+      <div class="banks">
+        <div class="bank"><h3>Brand identity</h3><p>Logos, type systems, colour, guidelines and packaging.</p></div>
+        <div class="bank"><h3>Digital and UI</h3><p>Websites, apps and design systems, handed over in Figma.</p></div>
+        <div class="bank"><h3>Illustration</h3><p>Editorial pieces, covers, record sleeves and murals.</p></div>
+        <div class="bank"><h3>Posters and print</h3><p>Campaigns, editions and anything that goes on a wall.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section vacancy" aria-labelledby="studio-title">
+    <h2 id="studio-title">One person, on purpose</h2>
+    <div class="vacancy__panel"><b>Vacancy</b><span>Booking projects from February 2027</span></div>
+    <div class="vacancy__text">
+      <p>You work with me from the first call to the final file. No account managers, no hand-offs. I take four projects at a time, so each one gets proper attention.</p>
+    </div>
+  </section>
+
+  <section class="night contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title" class="script">Have a project in mind?</h2>
+      <a class="mail" href="mailto:hello@inesrook.studio">hello@inesrook.studio</a>
+      <p>Tell me what you are making and when it needs to exist.</p>
+      <a class="btn" href="mailto:hello@inesrook.studio">Write an email</a>
+      <footer class="footer">
+        <span>Ines Rook, graphic design studio, Rotterdam</span>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">Are.na</a></li><li><a href="#">LinkedIn</a></li></ul>
+        <span>The sign and all projects shown are fictional demonstration work.</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Light switch: daylight porcelain or lit neon. One state change, no loop.
+  const btn = document.querySelector('[data-switch]');
+  btn.addEventListener('click', () => {
+    const day = document.body.classList.toggle('is-day');
+    btn.setAttribute('aria-pressed', String(!day));
+    btn.textContent = day ? 'Turn the neon on' : 'Turn the neon off';
+  });
+</script>
+</body>
+</html>

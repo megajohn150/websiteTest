@@ -7,7 +7,7 @@
         "rule": "flat-type-hierarchy",
         "value": "*",
         "files": [
-          "brutalistanimated.html"
+          "hallmark/brutalistanimated.html"
         ],
         "createdAt": "2026-11-18T20:58:36.061Z",
         "reason": "Claude triage: h1 is clamp(3.5-11rem) over 17px body, section heads 2.5-6rem; detector misreads the clamp/@import chain, same markup as the originals"
@@ -16,10 +16,46 @@
         "rule": "flat-type-hierarchy",
         "value": "*",
         "files": [
-          "swissanimated.html"
+          "hallmark/swissanimated.html"
         ],
         "createdAt": "2026-11-18T20:58:36.089Z",
         "reason": "Claude triage: h1 is clamp(3.5-11rem) over 17px body, section heads 2.5-6rem; detector misreads the clamp/@import chain, same markup as the originals"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "impeccable/desert-neon.html"
+        ],
+        "createdAt": "2026-11-18T21:24:52.951Z",
+        "reason": "Claude triage: neon glow is the literal material of the user-adopted Desert Neon Sign Program world (catalog grammar: css neon glow states); confined to neon script, lamps and the vacancy panel"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "impeccable/origami.html"
+        ],
+        "createdAt": "2026-11-18T21:32:52.967Z",
+        "reason": "Claude triage: washi cream is the material of the user-adopted Orizuru world (board palette: Washi Cream #EDE3D1); vermilion carries the hero and close"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "impeccable/desert-neon.html"
+        ],
+        "createdAt": "2026-11-18T21:32:52.983Z",
+        "reason": "Claude triage: the dashed line is the wiring line between numbered lamps in the sign program's build sequence"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "impeccable/desert-neon.html"
+        ],
+        "createdAt": "2026-11-18T21:32:52.998Z",
+        "reason": "Claude triage: the grid is the drafting sheet of the sign's working elevation, part of the adopted world's grammar"
       }
     ]
   }

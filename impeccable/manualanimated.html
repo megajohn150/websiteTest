@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ines Rook, graphic designer</title>
+<meta name="description" content="Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam: one designer, one language.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/manual/page.css">
+<link rel="stylesheet" href="styles/motion.css">
+<script>if (matchMedia("(prefers-reduced-motion: no-preference)").matches) { document.documentElement.classList.add("js-motion"); setTimeout(() => { if (!document.documentElement.classList.contains("motion-ready")) document.documentElement.classList.remove("js-motion"); }, 2500); }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="scripts/motion-core.js" defer></script>
+<script src="scripts/motion-manual.js" defer></script>
+<style>
+  .t-d { font-family: var(--font-display); font-weight: 600; } .t-b { font-family: var(--font-body); }
+  .c-red { fill: var(--red); } .c-blue { fill: var(--blue); } .c-ink { fill: var(--ink); } .c-stock { fill: var(--stock); } .c-yel { fill: var(--yellow); } .c-stock2 { fill: var(--stock-2); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Manual sections">
+  <ol class="tabs">
+    <li><a href="#s0" aria-current="true"><span><span class="n">0</span><span class="lbl">Cover</span></span></a></li>
+    <li><a href="#s1"><span><span class="n">1</span><span class="lbl">Work</span></span></a></li>
+    <li><a href="#s2"><span><span class="n">2</span><span class="lbl">Scope</span></span></a></li>
+    <li><a href="#s3"><span><span class="n">3</span><span class="lbl">Process</span></span></a></li>
+    <li><a href="#s4"><span><span class="n">4</span><span class="lbl">Studio</span></span></a></li>
+    <li><a href="#s5"><span><span class="n">5</span><span class="lbl">Contact</span></span></a></li>
+  </ol>
+</nav>
+
+<main id="main" class="binder">
+  <section class="sheet" id="s0" aria-labelledby="hero-title">
+    <div class="cover">
+      <div class="cover__mark" aria-hidden="true"></div>
+      <div class="cover__nav"><a href="#s1">Work</a><a href="#s3">Process</a><a href="mailto:hello@inesrook.studio">hello@inesrook.studio</a></div>
+      <div class="cover__body">
+        <h1 id="hero-title">One designer. One language.</h1>
+        <p class="lead">Ines Rook designs identities, interfaces, illustrations and posters from Rotterdam, all to one specification.</p>
+        <p><a class="btn" href="mailto:hello@inesrook.studio">Email Ines about a project</a></p>
+      </div>
+      <div class="cover__foot"><span>Ines Rook, graphic design manual</span><span>Rotterdam, edition 2026</span></div>
+    </div>
+  </section>
+
+  <section class="sheet" id="s1" aria-labelledby="work-title">
+    <div class="runhead"><span>Ines Rook design manual</span><b>1 Work</b><span>Sheets 1.0 to 1.5</span></div>
+    <div class="title"><span class="n">1.0</span><h2 id="work-title">Selected work</h2><p>Each project is specified the way it was delivered: the piece, then its rules.</p></div>
+
+    <article class="spec" aria-labelledby="p1">
+      <div class="art" role="img" aria-label="Three of the twelve Tidewater Festival posters in portrait A1, nights one to three, red and blue">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" class="c-stock2"/>
+          <g transform="translate(22 24)"><rect width="106" height="150" class="c-stock"/><circle cx="72" cy="52" r="28" class="c-red"/><rect y="102" width="106" height="48" class="c-blue"/><text x="8" y="26" class="t-d c-ink" font-size="15">Tidewater</text><text x="8" y="140" class="t-b c-stock" font-size="8">Night 1, 14 Aug</text></g>
+          <g transform="translate(147 24)"><rect width="106" height="150" class="c-blue"/><circle cx="34" cy="84" r="30" class="c-red"/><rect y="118" width="106" height="32" class="c-stock"/><text x="8" y="26" class="t-d c-stock" font-size="15">Tidewater</text><text x="8" y="140" class="t-b c-ink" font-size="8">Night 2, 15 Aug</text></g>
+          <g transform="translate(272 24)"><rect width="106" height="150" class="c-red"/><rect x="0" y="70" width="106" height="80" class="c-blue"/><circle cx="53" cy="70" r="22" class="c-stock"/><text x="8" y="26" class="t-d c-stock" font-size="15">Tidewater</text><text x="8" y="140" class="t-b c-stock" font-size="8">Night 3, 16 Aug</text></g>
+          <text x="22" y="204" class="t-b" font-size="11" style="fill:var(--muted)">Three of twelve, A1 portrait, two-colour screenprint</text>
+        </svg>
+      </div>
+      <div>
+        <h3 id="p1">1.1 Tidewater Festival</h3>
+        <p class="sub">Twelve posters, one per night, printed in two colours.</p>
+        <dl>
+          <dt>Discipline</dt><dd>Poster series</dd>
+          <dt>Year</dt><dd>2025</dd>
+          <dt>Type</dt><dd class="type"><span style="font-family:var(--font-display);font-weight:600">Aa Bb Rr 0123</span>Familjen Grotesk Bold</dd>
+          <dt>Colours</dt><dd class="swatches"><span class="sw"><i style="background:var(--red)"></i>Red 032, #C4221A</span><span class="sw"><i style="background:var(--blue)"></i>Blue 286, #0B4FA8</span></dd>
+          <dt>Format</dt><dd>A1 screenprint, 12 nights</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="spec" aria-labelledby="p2">
+      <div class="art" role="img" aria-label="Hallo Bakery wordmark in lowercase on a yellow bag">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" class="c-stock2"/>
+          <rect x="120" y="40" width="160" height="230" class="c-yel"/>
+          <rect x="120" y="40" width="160" height="22" class="c-ink" opacity="0.12"/>
+          <text x="200" y="170" text-anchor="middle" class="t-d c-ink" font-size="50">hallo</text>
+          <text x="200" y="196" text-anchor="middle" class="t-b c-ink" font-size="11">bread and coffee</text>
+        </svg>
+      </div>
+      <div>
+        <h3 id="p2">1.2 Hallo Bakery</h3>
+        <p class="sub">A wordmark that fits a paper bag and a shopfront.</p>
+        <dl>
+          <dt>Discipline</dt><dd>Identity and packaging</dd>
+          <dt>Year</dt><dd>2025</dd>
+          <dt>Type</dt><dd class="type"><span style="font-family:var(--font-body);font-weight:600">Aa Bb Rr 0123</span>Public Sans Semibold</dd>
+          <dt>Colours</dt><dd class="swatches"><span class="sw"><i style="background:var(--yellow)"></i>Yellow 116, #F2C230</span><span class="sw"><i style="background:var(--ink)"></i>Black, #141414</span></dd>
+          <dt>Applications</dt><dd>Bags, boxes, shopfront, menu</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="spec" aria-labelledby="p3">
+      <div class="art" role="img" aria-label="Ferro banking app screen with a balance and three transactions">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" class="c-blue"/>
+          <rect x="115" y="24" width="170" height="300" rx="16" class="c-stock"/>
+          <text x="135" y="64" class="t-b" font-size="11" style="fill:var(--muted)">Main account</text>
+          <text x="135" y="100" class="t-d c-ink" font-size="30">€2,340.00</text>
+          <g class="t-b c-ink" font-size="11">
+            <text x="135" y="146">Groceries</text><text x="265" y="146" text-anchor="end">−42.10</text>
+            <text x="135" y="176">Salary</text><text x="265" y="176" text-anchor="end">+2,900.00</text>
+            <text x="135" y="206">Rent</text><text x="265" y="206" text-anchor="end">−1,150.00</text>
+          </g>
+          <rect x="135" y="236" width="130" height="32" class="c-red"/>
+          <text x="200" y="257" text-anchor="middle" class="t-b c-stock" font-size="12">Send money</text>
+        </svg>
+      </div>
+      <div>
+        <h3 id="p3">1.3 Ferro</h3>
+        <p class="sub">Calm screens for money: big numbers, few words.</p>
+        <dl>
+          <dt>Discipline</dt><dd>Banking app interface</dd>
+          <dt>Year</dt><dd>2024</dd>
+          <dt>Type</dt><dd class="type"><span style="font-family:var(--font-body);font-weight:400">Aa Bb Rr 0123</span>Public Sans Regular</dd>
+          <dt>Colours</dt><dd class="swatches"><span class="sw"><i style="background:var(--blue)"></i>Blue 286, #0B4FA8</span><span class="sw"><i style="background:var(--red)"></i>Red 032, #C4221A</span></dd>
+          <dt>Delivered</dt><dd>Design system in Figma</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="spec" aria-labelledby="p4">
+      <div class="art" role="img" aria-label="Small Hours record sleeve: a blue square sleeve with a black disc sliding out of its right edge">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" class="c-stock2"/>
+          <circle cx="250" cy="150" r="118" class="c-ink"/>
+          <circle cx="250" cy="150" r="30" class="c-red"/>
+          <rect x="40" y="32" width="236" height="236" class="c-blue"/>
+          <text x="58" y="70" class="t-d c-stock" font-size="24">Small Hours</text>
+          <text x="58" y="248" class="t-b c-stock" font-size="11">Late-night jazz, volume one</text>
+        </svg>
+      </div>
+      <div>
+        <h3 id="p4">1.4 Small Hours Records</h3>
+        <p class="sub">A sleeve system for a late-night jazz label.</p>
+        <dl>
+          <dt>Discipline</dt><dd>Sleeves and illustration</dd>
+          <dt>Year</dt><dd>2024</dd>
+          <dt>Type</dt><dd class="type"><span style="font-family:var(--font-display);font-weight:500">Aa Bb Rr 0123</span>Familjen Grotesk Medium</dd>
+          <dt>Colours</dt><dd class="swatches"><span class="sw"><i style="background:var(--blue)"></i>Blue 286, #0B4FA8</span><span class="sw"><i style="background:var(--ink)"></i>Black, #141414</span></dd>
+          <dt>Format</dt><dd>12 inch sleeve, label, inner bag</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="spec" aria-labelledby="p5">
+      <div class="art" role="img" aria-label="Museum of Maps wayfinding sign reading Room 4, Cartography">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" class="c-ink"/>
+          <text x="30" y="250" class="t-d c-stock" font-size="240">4</text>
+          <rect x="200" y="188" width="16" height="16" class="c-red"/>
+          <text x="200" y="240" class="t-d c-stock" font-size="30">Cartography</text>
+          <text x="200" y="266" class="t-b c-stock" font-size="12">Room 4, first floor</text>
+        </svg>
+      </div>
+      <div>
+        <h3 id="p5">1.5 Museum of Maps</h3>
+        <p class="sub">Signs that read from twenty metres in low light.</p>
+        <dl>
+          <dt>Discipline</dt><dd>Wayfinding and identity</dd>
+          <dt>Year</dt><dd>2023</dd>
+          <dt>Type</dt><dd class="type"><span style="font-family:var(--font-display);font-weight:600">Aa Bb Rr 0123</span>Familjen Grotesk Bold</dd>
+          <dt>Colours</dt><dd class="swatches"><span class="sw"><i style="background:var(--ink)"></i>Black, #141414</span><span class="sw"><i style="background:var(--red)"></i>Red 032, #C4221A</span></dd>
+          <dt>Reading distance</dt><dd>20 metres</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+
+  <section class="sheet" id="s2" aria-labelledby="scope-title">
+    <div class="runhead"><span>Ines Rook design manual</span><b>2 Scope</b><span>Sheet 2.0</span></div>
+    <div class="title"><span class="n">2.0</span><h2 id="scope-title">Applications</h2><p>One person covers every application, so they all speak the same language.</p></div>
+    <table class="apps">
+      <thead><tr><th scope="col">Section</th><th scope="col">Application</th><th scope="col">Includes</th></tr></thead>
+      <tbody>
+        <tr><td class="code">2.1</td><th scope="row">Brand identity</th><td>Logos, type systems, colour, guidelines and packaging.</td></tr>
+        <tr><td class="code">2.2</td><th scope="row">Digital and UI</th><td>Websites, apps and design systems, handed over in Figma.</td></tr>
+        <tr><td class="code">2.3</td><th scope="row">Illustration</th><td>Editorial pieces, covers, record sleeves and murals.</td></tr>
+        <tr><td class="code">2.4</td><th scope="row">Posters and print</th><td>Campaigns, editions and anything that goes on a wall.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="sheet" id="s3" aria-labelledby="process-title">
+    <div class="runhead"><span>Ines Rook design manual</span><b>3 Process</b><span>Sheet 3.0</span></div>
+    <div class="title"><span class="n">3.0</span><h2 id="process-title">Procedure</h2></div>
+    <ol class="procedure">
+      <li><span class="n">3.1</span><h3>Listen</h3><p>A call, a brief, a fixed quote.</p></li>
+      <li><span class="n">3.2</span><h3>Sketch</h3><p>Three directions on paper, one chosen.</p></li>
+      <li><span class="n">3.3</span><h3>Build</h3><p>The system, tested on real things.</p></li>
+      <li><span class="n">3.4</span><h3>Hand over</h3><p>Files, guidelines and a walkthrough.</p></li>
+    </ol>
+  </section>
+
+  <section class="sheet" id="s4" aria-labelledby="studio-title">
+    <div class="runhead"><span>Ines Rook design manual</span><b>4 Studio</b><span>Sheet 4.0</span></div>
+    <div class="title"><span class="n">4.0</span><h2 id="studio-title">One person, on purpose</h2></div>
+    <div class="studio">
+      <p class="big">You work with me from the first call to the final file. No account managers, no hand-offs. I take four projects at a time, so each one gets proper attention.</p>
+      <dl>
+        <dt>Studio</dt><dd>Ines Rook, one designer</dd>
+        <dt>Based in</dt><dd>Rotterdam, Netherlands</dd>
+        <dt>Capacity</dt><dd>Four projects at a time</dd>
+        <dt>Booking</dt><dd>Projects from February 2027</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sheet sheet--red contact" id="s5" aria-labelledby="contact-title">
+    <div class="runhead"><span>Ines Rook design manual</span><b>5 Contact</b><span>Sheet 5.0</span></div>
+    <h2 id="contact-title">Have a project in mind?</h2>
+    <a class="mail" href="mailto:hello@inesrook.studio">hello@inesrook.studio</a>
+    <p>Tell me what you are making and when it needs to exist.</p>
+    <a class="btn" href="mailto:hello@inesrook.studio">Write an email</a>
+    <footer class="colophon">
+      <span>Ines Rook, graphic design studio, Rotterdam</span>
+      <span>Instagram, Are.na and LinkedIn: links to come</span>
+      <span>Projects, colour codes and formats shown are fictional demonstration material.</span>
+    </footer>
+  </section>
+</main>
+
+<script>
+  // Marks the index tab of the sheet being read. State only; no motion beyond the tab's own colour change.
+  const tabs = [...document.querySelectorAll('.tabs a')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      tabs.forEach((t) => t.setAttribute('aria-current', String(t.getAttribute('href') === '#' + e.target.id)));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('.sheet[id]').forEach((s) => io.observe(s));
+</script>
+</body>
+</html>

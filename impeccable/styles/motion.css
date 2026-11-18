@@ -1,0 +1,14 @@
+/* Shared motion layer for the *animated.html copies. Content stays visible without JS and under reduced motion. */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+
+/* hidden only until the intro has set its start states (2.5 s fallback in the head) */
+.js-motion:not(.motion-ready) body { visibility: hidden; }
+
+.w { display: inline-block; overflow: clip; vertical-align: top; padding-bottom: 0.1em; margin-bottom: -0.1em; }
+.wi { display: inline-block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-motion body { visibility: visible; }
+}
