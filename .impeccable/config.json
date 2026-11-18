@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "brutalistanimated.html"
+        ],
+        "createdAt": "2026-11-18T20:58:36.061Z",
+        "reason": "Claude triage: h1 is clamp(3.5-11rem) over 17px body, section heads 2.5-6rem; detector misreads the clamp/@import chain, same markup as the originals"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "swissanimated.html"
+        ],
+        "createdAt": "2026-11-18T20:58:36.089Z",
+        "reason": "Claude triage: h1 is clamp(3.5-11rem) over 17px body, section heads 2.5-6rem; detector misreads the clamp/@import chain, same markup as the originals"
+      }
+    ]
+  }
+}

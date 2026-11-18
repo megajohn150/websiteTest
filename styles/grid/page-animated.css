@@ -1,0 +1,35 @@
+/* Hallmark · shape: Index-First · genre: editorial · theme: Grid (by request) · job: hire · draw: manual
+ * hero: Split, head on columns 1 to 7, an ultramarine field from column 8 to the bleed carrying a wayfinding sign · nav: edge-aligned two-line wordmark with the red square · footer: columns · imagery: the work built as sheets, one library photograph in duotone · signature: the Museum of Maps sign set at poster scale on the field, wiped in on load
+ * axes: light/grotesk-sans/cool · posture: full-palette · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H5 E4 S4 R4 V4 · weakest: R, motion can turn a Swiss page into a showreel; every move follows a column line or a field edge */
+/* waive motion: the user asked for scroll animation on this copy of swiss.html; the theme's still default is overridden by request */
+@import url("./page.css");
+
+/* smooth scroll */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+
+/* hidden only until the intro runs (and never without JS or with reduced motion) */
+.js-motion:not(.motion-ready) .hero h1, .js-motion:not(.motion-ready) .hero__text > div, .js-motion:not(.motion-ready) .hero__field, .js-motion:not(.motion-ready) .nav { visibility: hidden; }
+
+/* split words */
+.w { display: inline-block; overflow: clip; vertical-align: top; padding-bottom: 0.1em; margin-bottom: -0.1em; }
+.wi { display: inline-block; }
+.statement .w { overflow: visible; }
+
+.hero__field { overflow: clip; }
+.studio .photo { overflow: clip; }
+
+/* reading progress in the mark red */
+.progress { position: fixed; inset: 0 0 auto 0; height: 4px; z-index: var(--z-sticky-nav); background: var(--color-mark); transform: scaleX(0); transform-origin: 0 50%; pointer-events: none; }
+
+/* sheets lift their artwork on hover */
+.motion-ready .sheet .art > * { transition: transform var(--dur-long) var(--ease-out); }
+.motion-ready .sheet:hover .art > * { transform: translateY(-6px); }
+.motion-ready .index tbody tr { cursor: default; }
+
+@media (prefers-reduced-motion: reduce) {
+  .progress { display: none; }
+  .motion-ready .sheet:hover .art > * { transform: none; }
+}

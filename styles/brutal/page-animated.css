@@ -1,0 +1,34 @@
+/* Hallmark · shape: Statement then Index · genre: editorial · theme: Brutal (by request) · job: hire · draw: manual
+ * hero: Statement, the head across all twelve columns on a 3px rule, the sentence and actions as boxed cells beneath · nav: boxed bar, wordmark, links, one ink action · footer: boxed cells · imagery: the work built as cells, one library photograph in the ink · signature: the work as a bento of boxed cells, the record spinning with the scroll
+ * axes: light/grotesk-heavy/chromatic-yellow · posture: committed · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P5 H5 E4 S4 R4 V5 · weakest: R, a pinned section is a lot; kept to one, and every move is a hard cut or a fast slam, never a float */
+/* waive motion: the user asked for scroll animation on this copy of brutalist.html; the theme's one-frame default holds for hover and state */
+@import url("./page.css");
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+
+.js-motion:not(.motion-ready) .hero h1, .js-motion:not(.motion-ready) .hero .cells, .js-motion:not(.motion-ready) .nav { visibility: hidden; }
+
+.w { display: inline-block; overflow: clip; vertical-align: top; padding-bottom: 0.06em; margin-bottom: -0.06em; }
+.wi { display: inline-block; }
+
+/* the hero rule is drawn, not printed */
+.motion-ready .hero h1 { position: relative; border-bottom-color: transparent; }
+.motion-ready .hero h1::after { content: ""; position: absolute; left: 0; right: 0; bottom: calc(-1 * var(--rule-bar)); height: var(--rule-bar); background: var(--color-rule); transform: scaleX(var(--rule, 1)); transform-origin: 0 50%; }
+
+/* the record: a wedge of light so the spin reads */
+.motion-ready .art--hours::before { background: conic-gradient(from var(--spin, 0deg), var(--color-ink) 0deg 318deg, var(--color-muted) 318deg 336deg, var(--color-ink) 336deg 360deg); }
+
+/* the step being read lights yellow, in one frame */
+.motion-ready .steps li.is-on { background: var(--color-accent); color: var(--color-accent-ink); }
+
+/* a hard ticker of the address in the contact block */
+.contact { overflow: clip; }
+.studio .photo { overflow: clip; }
+.art { will-change: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .hero h1::after { transform: none; }
+}
